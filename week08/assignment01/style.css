@@ -1,0 +1,229 @@
+#container{
+  width:90%;
+  max-width:1000px;
+  margin:20px auto;
+  border:5px solid rgba(212, 152, 195, 0.5); 
+  border-radius:20px;
+  padding:20px;
+  background-color:rgb(250, 248, 232); 
+}
+
+
+.intro{
+  background-image: url("images/backgroundimage.png");   
+  background-size: cover;
+  background-position: center;
+
+  display:flex;
+  align-items:center;
+  gap:20px;
+  padding:20px;
+  border:4px solid rgb(212, 152, 195); 
+  border-radius:20px; /* round corners */
+  background-color:rgba(212, 152, 195, 0.05); 
+  }
+ 
+.intro-quote{
+font-size:25px;   
+  color:#5b4456;
+}
+
+/* andreea n quote */
+.intro-text{
+  font-size: 22px;
+   color:#5b4456;
+}
+
+.profile-pic{
+  width:200px;
+  border-radius:20px; 
+  border:4px solid rgb(212, 152, 195);
+  flex: shrink 3;
+}
+.socials {
+  width: 25px;
+margin-right: 15px;
+}
+
+.subsection{
+margin: 20;
+font-size: 20px;
+justify-content: center; 
+}
+
+
+/* clicked links */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;        
+  justify-content: center; 
+  gap: 30px;          
+  border: 4px solid rgb(212, 152, 195); 
+  border-radius: 20px;  
+  padding: 10px 10px;  
+  background-color: transparent; 
+}
+/* appearance */
+nav ul li a {
+  text-decoration: none;
+  color: rgb(212, 152, 195);  
+  font-weight: bold;
+  font-size: 80;   
+ padding: 15px 25px;  
+  transition: 0.3s;
+transition-duration: 3s ;
+}
+
+nav ul li a:hover {
+  background-color: rgba(212,152,195,0.2); 
+}
+
+
+/* ----- box dividers 4 ab,hobbies,favourites ---- */
+.hobby-box{
+  background-color: rgba(255,255,255,0.7); 
+  
+  padding:20px;      
+  
+  border:3px solid rgb(212,152,195);  
+  border-radius:15px;
+  
+  margin:20px 0;     /* space between boxes */
+}
+
+.hobby-photos{
+  display:flex;
+  gap: 30px;           
+  flex-wrap: wrap;    
+  margin-top:10px;
+}
+
+.hobby-photo{
+  width:200px;
+  display:block;
+  margin-top:10px;
+  border-radius:15px;
+
+  border:3px solid rgb(212,152,195); }
+.hobby-photos a{
+  cursor: zoom-in;
+}
+
+
+
+  /* ----- movies ---- */
+.movie-item{
+  display:flex;
+  align-items:center;      /* vertical  */
+  gap:20px;                /* space between image and title */
+  margin-bottom:20px;      /* space between movies */
+}
+
+.movie-title{
+  font-size: 24px;        
+  font-weight: bold;
+  color: rgb(212,152,195); 
+}
+
+
+
+/* movie gallery */
+.movie-gallery {
+  display: flex;
+  flex-wrap: wrap;       
+  gap: 20px;             
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.movie-card {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  text-decoration: none;  
+  background-color: rgba(212,152,195,0.1);
+  border: 3px solid rgb(212,152,195);
+  border-radius: 15px;
+  padding: 10px;
+  width: 220px;           
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* hover effect */
+.movie-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+
+.movie-photo {
+  width: 200px;
+  border-radius: 15px;
+  border: 2px solid rgb(212,152,195);
+}
+
+.well-done {
+width: 400px
+
+}
+
+.movie-title {
+  margin-top: 10px;
+  font-size: 18px;        
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.jewellery {
+ background-image: url("images/ornaments.jpg");   
+  background-size: cover;
+  background-position: center;
+}
+
+
+.jewellery-box{
+  display:block;
+  background-image: url("images/ornaments.jpg");
+  background-size: cover;
+  background-position: center;
+  
+  border:3px solid rgb(212,152,195);
+  border-radius:15px;
+  padding:30px;
+  margin:20px 0;
+
+  text-decoration:none;
+}
+
+
+.jewellery-content{
+  background-color: rgba(255,255,255,0.7);
+  padding:20px;
+  border-radius:10px;
+}
+
+
+.jewellery-content ul{
+  list-style-type:none;
+  padding:0;
+  margin:0;
+}
+
+.jewellery-content li{
+  font-size:18px;
+  font-weight:bold;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  margin:8px 0;
+}
+.names-4-all{
+  display:block;
+  text-align:center;
+  margin-top:8px;
+  font-weight: bold;
+  font-size:17px;
+  color:#73486a;
+}

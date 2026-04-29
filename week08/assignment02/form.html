@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Form - Andreea Cojocari</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.4/dist/semantic.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+<div id="container">
+<section id="content">
+<div class="ui pink inverted pointing menu custom-fomantic-menu">
+ <a class="item" href="index.html">Home</a>
+ <a class="item" href="aboutme.html">About</a>
+ <a class="item" href="hobbies.html">Hobbies</a>
+ <a class="item" href="favourites.html">Favourites</a>
+ <a class="active item" href="form.html">Contact Form</a>
+ <a class="item" href="creativework.html">Creative Work</a>
+ <a class="item" href="college.html">College Life</a>
+</div>
+
+
+
+
+<header><h1>Contact Me</h1></header>
+<main>
+<div class="hobby-box">
+ <h2>Send me a message</h2>
+ <p>Use this form to contact me about creative projects, design ideas or college work.</p>
+ <form class="contact-form" action="#" method="post">
+<div class="form-row">
+<label for="fullname">Full name</label>
+<input type="text" id="fullname" name="fullname" required pattern="[A-Za-z ]{2,40}" title="Please enter 2 to 40 letters only.">
+</div>
+
+
+<div class="form-row">
+<label for="email">Email address</label>
+<input type="email" id="email" name="email" required title="Please enter a valid email address.">
+</div>
+<div class="form-row">
+<label for="age">Age</label>
+<input type="number" id="age" name="age" min="16" max="100" required title="Please enter an age between 16 and 100.">
+</div>
+
+
+<div class="form-row">
+<label for="project">Type of project</label>
+<select id="project" name="project" required>
+ <option value="">Choose one</option>
+ <option value="photography">Photography</option>
+ <option value="graphic-design">Graphic Design</option>
+ <option value="web-design">Web Design</option>
+ <option value="illustration">Illustration</option>
+</select>
+</div>
+
+
+<fieldset class="form-row">
+<legend>Preferred contact method</legend>
+<label><input type="radio" name="contact-method" value="email" required> Email</label>
+<label><input type="radio" name="contact-method" value="phone"> Phone</label>
+<label><input type="radio" name="contact-method" value="social-media"> Social media</label>
+</fieldset>
+
+
+<fieldset class="form-row">
+<legend>What are you interested in?</legend>
+<label><input type="checkbox" name="interest" value="portfolio"> Portfolio work</label>
+<label><input type="checkbox" name="interest" value="collaboration"> Collaboration</label>
+<label><input type="checkbox" name="interest" value="college"> College project</label>
+</fieldset>
+
+
+<div class="form-row">
+<label for="message">Message</label>
+<textarea id="message" name="message" rows="6" required minlength="10" title="Please write at least 10 characters."></textarea>
+</div>
+
+
+<div class="form-buttons">
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+</div>
+
+
+</form>
+ 
+</div>
+</main>
+<footer>
+<p>© 2026 Andreea Cojocari</p>
+</footer>
+</section>
+</div>
+</body>
+</html>
